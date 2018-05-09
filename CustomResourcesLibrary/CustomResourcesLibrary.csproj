@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{37EF7885-3EE8-4D79-9248-178AA118045A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoVis.Plugin.CustomResourcesLibrary</RootNamespace>
+    <AssemblyName>CustomResourcesLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\IECAS_X64\HJJDLL\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\AutoFilteredComboBox\Implementation\AutoFilteredComboBox.cs" />
+    <Compile Include="Controls\AutoFilteredComboBox\Implementation\FilterConfirmedEventArgs.cs" />
+    <Compile Include="Controls\CustomWindow\Implementation\CustomWindow.cs" />
+    <Compile Include="Controls\DMSTextBox\Implementation\DMSInfo.cs" />
+    <Compile Include="Controls\DMSTextBox\Implementation\DMSPart.cs" />
+    <Compile Include="Controls\DMSTextBox\Implementation\DMSTextBox.cs" />
+    <Compile Include="Controls\DMSTextBox\Implementation\LonLatType.cs" />
+    <Compile Include="Controls\RectBorder\Implementation\RectBorder.cs" />
+    <Compile Include="Controls\RegexTextBox\Implementation\RegexTextBox.cs" />
+    <Compile Include="Controls\ToolBoxWindow\Implementation\ToolBoxWindow.cs" />
+    <Compile Include="Converters\VisibilityToNullableBooleanConverter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThemeManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\按钮小-禁用.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Controls\CustomWindow\Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\ToolBoxWindow\Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\ControlsStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\按钮大-悬浮.png" />
+    <Resource Include="Resources\按钮大-禁用.png" />
+    <Resource Include="Resources\按钮大-选择.png" />
+    <Resource Include="Resources\按钮大.png" />
+    <Resource Include="Resources\按钮小-悬浮.png" />
+    <Resource Include="Resources\按钮小-选择.png" />
+    <Resource Include="Resources\按钮小.png" />
+    <Resource Include="Resources\标题栏-退出.png" />
+    <Resource Include="Resources\标题栏背景-右.png" />
+    <Resource Include="Resources\背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\标题栏-业务.png" />
+    <Resource Include="Resources\标题栏-地图切换.png" />
+    <Resource Include="Resources\标题栏-工具.png" />
+    <Resource Include="Resources\标题栏-按钮-背景-悬浮.png" />
+    <Resource Include="Resources\标题栏-按钮-背景-选择.png" />
+    <Resource Include="Resources\标题栏-按钮-背景.png" />
+    <Resource Include="Resources\标题栏-用户.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Fonts\微软简老宋_A.TTF" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\功能条-按钮背景-悬浮.png" />
+    <Resource Include="Resources\功能条-按钮背景-选择.png" />
+    <Resource Include="Resources\功能条-按钮背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\列表-展开.png" />
+    <Resource Include="Resources\列表-收起.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Fonts\DS-DIGI.TTF" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Fonts\fontawesome.ttf" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
